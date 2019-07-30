@@ -172,4 +172,4 @@ if __name__ == '__main__':
     clean(OUT_PUT_DIR)
     clean(DOWNLOAD_DIR)
 
-    webAppFicDownloader.run(host=IP_ADRR, PORT=8080, server='gevent')
+    webAppFicDownloader.run(host=IP_ADRR, port=PORT, server='gevent')
