@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{titel}}</title>
+{% if html is defined %}
+<style type="text/css">
+   {% include 'epub.css' %}
+   {# if the file is html we will inclue/embeded the css in the page#}
+</style>
+{% else %}
+   <link href="epub.css" rel="stylesheet" type="text/css"/>
+   {# else we will use refrence and the css file will be in the epub #}
+{% endif %}
+</head>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>{{  title  }}</dc:title>
+    <dc:creator opf:role="aut">{{ creator }}</dc:creator>
+    <dc:language>{{ language }}</dc:language>
+    <dc:rights>{{ rights }}</dc:rights>
+    <dc:publisher>{{ publisher }}</dc:publisher>
+    <dc:identifier opf:scheme="UUID">{{ uid }}</dc:identifier>
+    <dc:date>{{ date }}</dc:date>
+  </metadata>
+  <manifest>
+    <item href="book.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="epub.css" id="css" media-type="text/css"/>
+    <item href="toc.xhtml" id="toc" media-type="application/xhtml+xml"/>
+    <item href="Cover.html" id="cover" media-type="application/xhtml+xml"/>
+    {% for chapter in chapters %}
+    <item href="{{ chapter['link'] }}" id="{{ chapter['id'] }}" media-type="application/xhtml+xml"/>
+    {% endfor %}
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover"/>
+  
+    <itemref idref="toc"/>
+    {% for chapter in chapters %}
+    <itemref idref="{{ chapter['id'] }}"/>
+    {% endfor %}
+  </spine>
+  <guide>
+    <reference type="toc" title="Table of Contents" href="toc.xhtml"/>
+    <reference type="text" title="Cover" href="Cover.html" />
+  </guide>
+</package>

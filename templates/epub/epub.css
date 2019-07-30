@@ -1,0 +1,12 @@
+body,td,th,div {font-family:'Arial',sans-serif;}
+body {font-weight:400;}
+th {font-weight:700;}
+p {padding-top:0; margin-bottom:1em; z-index:100; text-indent:0;}
+li {margin-left:25px;}
+img {max-width: 100%; height: auto;}
+h1,h2,h3,h4,h5,h6 {margin-top:0; margin-bottom:0.66em; font-weight:700; clear:both;}
+p {clear:both;}
+h1 {font-size:2em;}
+h2 {color:#ff9b2f; font-size:1.6em;}
+h3 {margin:14px 0 6px;	font-size:1.3em; color:green;}
+h4 {color:#BD1D1D;}

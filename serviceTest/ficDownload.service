@@ -1,0 +1,8 @@
+[Unit]
+Description=FicDownloader
+
+[Service]
+ExecStart=/home/angel/epub/webTest.py
+
+[Install]
+WantedBy=multi-user.target
