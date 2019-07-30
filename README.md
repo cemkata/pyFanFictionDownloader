@@ -1,22 +1,22 @@
 # pyFanFictionDownloader
 You need python 3.6
-Libraryes list
-bottle -Web framework
-gevent -Web server for asynchronus_web
-beautifulsoup -HTML parser
-Jinja2 -HTML templates
-WeasyPrint -HTML to PDF
-claptcha -Library for capcha
-Pillow -Needed for claptcha. search for PIL
+- Libraryes list
+- bottle -Web framework
+- gevent -Web server for asynchronus_web
+- beautifulsoup -HTML parser
+- Jinja2 -HTML templates
+- WeasyPrint -HTML to PDF
+- claptcha -Library for capcha
+- Pillow -Needed for claptcha. search for PIL
 
 Install this libraries using pip:
-pip install bottle
-pip install gevent
-pip install beautifulsoup
-pip install Jinja2
-pip install WeasyPrint
-pip install claptcha
-pip install Pillow
+- pip install bottle
+- pip install gevent
+- pip install beautifulsoup
+- pip install Jinja2
+- pip install WeasyPrint
+- pip install claptcha
+- pip install Pillow
 
 Install calibre for convertion to mobi and usage of convert to all file types.
 Test the calibre instalation just run ebook-convert
@@ -39,6 +39,6 @@ Unfinished additional ideas to create linux service. In serviceTest you can find
 How to add additinal sites check __HowTheApplicationWorks.txt
 
 Licences
-I am includin the libraries. The files are not modifed! For more information regarding the licences of each librarie check the librarie it self.
+I am including the libraries. The files are not modifed! For more information regarding the licences of each librarie check the librarie it self.
 
 Regarding my application - it is distributed under GNU GENERAL PUBLIC LICENSE
