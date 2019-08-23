@@ -51,8 +51,8 @@ class downloader:
                 # Query the website and return the html to the variable 'page'
                 page = self.downloadPage(inLink)
 
-                contens = self.webSiteController.getPageContent(
-                    page)  # get only the html containing the text without menu and and other stuff
+                contens = self.webSiteController.getPageContent(page)
+                # get only the html containing the text without menu and and other stuff
 
                 if self.chapterNumber == 1:  # if this is the first chapter we create a folder for the html files
                     temp = self.webSiteController.getDetails(contens)  # get author and fiction name
