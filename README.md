@@ -1,4 +1,6 @@
 # pyFanFictionDownloader
+Discontinued. Downloads from FanFiction.net result in 403 Forbidden. I dont have intention to debug or try to bypass the bot protection.
+
 You need python 3.6
 - Libraries list
 - bottle -Web framework
